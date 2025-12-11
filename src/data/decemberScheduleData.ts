@@ -24,7 +24,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-01',
 		dayOfMonth: 1,
-		weekday: 'Пн',
+		weekday: 'Понедельник',
 		weekNumber: 1,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -35,7 +35,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-02',
 		dayOfMonth: 2,
-		weekday: 'Вт',
+		weekday: 'Вторник',
 		weekNumber: 1,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -46,7 +46,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-03',
 		dayOfMonth: 3,
-		weekday: 'Ср',
+		weekday: 'Среда',
 		weekNumber: 1,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -57,7 +57,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-04',
 		dayOfMonth: 4,
-		weekday: 'Чт',
+		weekday: 'Четверг',
 		weekNumber: 1,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -68,7 +68,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-05',
 		dayOfMonth: 5,
-		weekday: 'Пт',
+		weekday: 'Пятница',
 		weekNumber: 1,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -79,7 +79,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-06',
 		dayOfMonth: 6,
-		weekday: 'Сб',
+		weekday: 'Суббота',
 		weekNumber: 1,
 		monthName: DECEMBER,
 		shiftType: 'none',
@@ -90,7 +90,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-07',
 		dayOfMonth: 7,
-		weekday: 'Вс',
+		weekday: 'Воскресенье',
 		weekNumber: 1,
 		monthName: DECEMBER,
 		shiftType: 'evening',
@@ -103,7 +103,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-08',
 		dayOfMonth: 8,
-		weekday: 'Пн',
+		weekday: 'Понедельник',
 		weekNumber: 2,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -114,7 +114,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-09',
 		dayOfMonth: 9,
-		weekday: 'Вт',
+		weekday: 'Вторник',
 		weekNumber: 2,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -125,7 +125,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-10',
 		dayOfMonth: 10,
-		weekday: 'Ср',
+		weekday: 'Среда',
 		weekNumber: 2,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -136,7 +136,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-11',
 		dayOfMonth: 11,
-		weekday: 'Чт',
+		weekday: 'Четверг',
 		weekNumber: 2,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -147,7 +147,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-12',
 		dayOfMonth: 12,
-		weekday: 'Пт',
+		weekday: 'Пятница',
 		weekNumber: 2,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -158,7 +158,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-13',
 		dayOfMonth: 13,
-		weekday: 'Сб',
+		weekday: 'Суббота',
 		weekNumber: 2,
 		monthName: DECEMBER,
 		shiftType: 'none',
@@ -169,7 +169,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-14',
 		dayOfMonth: 14,
-		weekday: 'Вс',
+		weekday: 'Воскресенье',
 		weekNumber: 2,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -182,7 +182,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-15',
 		dayOfMonth: 15,
-		weekday: 'Пн',
+		weekday: 'Понедельник',
 		weekNumber: 3,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -193,7 +193,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-16',
 		dayOfMonth: 16,
-		weekday: 'Вт',
+		weekday: 'Вторник',
 		weekNumber: 3,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -204,7 +204,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-17',
 		dayOfMonth: 17,
-		weekday: 'Ср',
+		weekday: 'Среда',
 		weekNumber: 3,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -215,7 +215,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-18',
 		dayOfMonth: 18,
-		weekday: 'Чт',
+		weekday: 'Четверг',
 		weekNumber: 3,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -226,7 +226,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-19',
 		dayOfMonth: 19,
-		weekday: 'Пт',
+		weekday: 'Пятница',
 		weekNumber: 3,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -237,7 +237,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-20',
 		dayOfMonth: 20,
-		weekday: 'Сб',
+		weekday: 'Суббота',
 		weekNumber: 3,
 		monthName: DECEMBER,
 		shiftType: 'none',
@@ -248,7 +248,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-21',
 		dayOfMonth: 21,
-		weekday: 'Вс',
+		weekday: 'Воскресенье',
 		weekNumber: 3,
 		monthName: DECEMBER,
 		shiftType: 'evening',
@@ -261,7 +261,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-22',
 		dayOfMonth: 22,
-		weekday: 'Пн',
+		weekday: 'Понедельник',
 		weekNumber: 4,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -272,7 +272,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-23',
 		dayOfMonth: 23,
-		weekday: 'Вт',
+		weekday: 'Вторник',
 		weekNumber: 4,
 		monthName: DECEMBER,
 		shiftType: 'evening',
@@ -283,7 +283,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-24',
 		dayOfMonth: 24,
-		weekday: 'Ср',
+		weekday: 'Среда',
 		weekNumber: 4,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -294,7 +294,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-25',
 		dayOfMonth: 25,
-		weekday: 'Чт',
+		weekday: 'Четверг',
 		weekNumber: 4,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -305,7 +305,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-26',
 		dayOfMonth: 26,
-		weekday: 'Пт',
+		weekday: 'Пятница',
 		weekNumber: 4,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -316,7 +316,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-27',
 		dayOfMonth: 27,
-		weekday: 'Сб',
+		weekday: 'Суббота',
 		weekNumber: 4,
 		monthName: DECEMBER,
 		shiftType: 'none',
@@ -327,7 +327,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-28',
 		dayOfMonth: 28,
-		weekday: 'Вс',
+		weekday: 'Воскресенье',
 		weekNumber: 4,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -340,7 +340,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-29',
 		dayOfMonth: 29,
-		weekday: 'Пн',
+		weekday: 'Понедельник',
 		weekNumber: 5,
 		monthName: DECEMBER,
 		shiftType: 'none',
@@ -351,7 +351,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-30',
 		dayOfMonth: 30,
-		weekday: 'Вт',
+		weekday: 'Вторник',
 		weekNumber: 5,
 		monthName: DECEMBER,
 		shiftType: 'none',
@@ -362,7 +362,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-31',
 		dayOfMonth: 31,
-		weekday: 'Ср',
+		weekday: 'Среда',
 		weekNumber: 5,
 		monthName: DECEMBER,
 		shiftType: 'none',

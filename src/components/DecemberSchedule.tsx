@@ -21,6 +21,16 @@ const isPastDay = (d: DayShift) => {
 	)
 }
 
+
+const isToday = (d: DayShift) => {
+	const dayDate = toDate(d.date)
+	return (
+		dayDate.getFullYear() === today.getFullYear() &&
+		dayDate.getMonth() === today.getMonth() &&
+		dayDate.getDate() === today.getDate()
+	)
+}
+
 // группировка по неделям
 const groupByWeek = (days: DayShift[]) => {
 	const weeks = new Map<number, DayShift[]>()
@@ -75,7 +85,7 @@ const WeekBlock: React.FC<WeekBlockProps> = ({ weekNumber, days }) => {
 
 			<div className='grid grid-cols-1 gap-2'>
 				{days.map(day => (
-					<DayRow key={day.date} day={day} />
+					<DayRow key={day.date} day={day}     />
 				))}
 			</div>
 		</Card>
@@ -88,6 +98,7 @@ interface DayRowProps {
 
 const DayRow: React.FC<DayRowProps> = ({ day }) => {
 	const past = isPastDay(day)
+	const todayFlag = isToday(day)
 	const isWeekend = day.weekday === 'Сб' || day.weekday === 'Вс'
 
 	const shiftColor =
@@ -102,22 +113,32 @@ const DayRow: React.FC<DayRowProps> = ({ day }) => {
 			className={cn(
 				'w-full flex items-center justify-between rounded-md border px-3 py-2 text-left transition',
 				'focus:outline-none focus:ring-1 focus:ring-ring',
-				past && 'opacity-40 pointer-events-none', // блокируем прошлые
+
+				// прошлые дни
+				past && 'opacity-40 pointer-events-none',
+
+				// активные дни
 				!past && 'active:scale-[0.99]',
-				isWeekend && 'bg-muted/30'
+
+				// выходные
+				isWeekend && 'bg-muted/30',
+
+				// ✅ выделение сегодняшнего дня
+				todayFlag &&
+					'border-blue-500 bg-blue-50 shadow-[0_0_10px_rgba(59,130,246,0.4)]'
 			)}
 		>
-			{/* Левая часть: дата + день недели + неделя */}
+			{/* Левая часть */}
 			<div className='flex flex-col'>
 				<span className='text-sm font-semibold'>
-					{day.dayOfMonth} {day.monthName.slice(0, 3)} {/* 1 Дек */}
+					{day.dayOfMonth} {day.monthName.slice(0, 3)}
 				</span>
 				<span className='text-xs text-muted-foreground'>
 					{day.weekday} · неделя {day.weekNumber}
 				</span>
 			</div>
 
-			{/* Центр: смена и время */}
+			{/* Центр */}
 			<div className='flex flex-col items-start'>
 				<Badge
 					variant='outline'
@@ -132,7 +153,7 @@ const DayRow: React.FC<DayRowProps> = ({ day }) => {
 				)}
 			</div>
 
-			{/* Правая часть: часы */}
+			{/* Правая часть */}
 			<div className='flex flex-col items-end'>
 				{day.durationHours > 0 ? (
 					<span className='text-sm font-medium'>{day.durationHours} ч</span>
