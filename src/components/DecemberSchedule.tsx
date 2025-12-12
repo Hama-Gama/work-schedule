@@ -42,14 +42,18 @@ const groupByWeek = (days: DayShift[]) => {
 }
 
 export const DecemberSchedule: React.FC = () => {
-	const weeks = React.useMemo(() => groupByWeek(december2025Schedule), [])
+	// фильтр: оставляем только даты >= сегодня
+	const weeks = React.useMemo(() => {
+		const todayOnly = december2025Schedule.filter(d => !isPastDay(d))
+		return groupByWeek(todayOnly)
+	}, [])
 
 	return (
-		<div className='w-full h-full flex flex-col items-stretch bg-background'>
+		<div className='max-w-[700px] m-auto h-full flex flex-col items-stretch bg-background'>
 			<header className='px-4 pt-4 pb-2 flex items-center justify-between'>
 				<div>
-					<h1 className='text-xl font-semibold'>График работы</h1>
-					<p className='text-sm text-muted-foreground'>
+					<h1 className='text-lg font-semibold'>График работы</h1>
+					<p className='text-lg text-muted-foreground'>
 						{december2025Schedule[0]?.monthName} 2025 &middot; 5 недель
 					</p>
 				</div>
@@ -75,10 +79,10 @@ const WeekBlock: React.FC<WeekBlockProps> = ({ weekNumber, days }) => {
 	return (
 		<Card className='p-3 border-border/60'>
 			<div className='flex items-center justify-between mb-2'>
-				<span className='text-xs font-medium text-muted-foreground'>
+				<span className='text-lg font-medium text-muted-foreground'>
 					Неделя {weekNumber}
 				</span>
-				<span className='text-[10px] uppercase tracking-wide text-muted-foreground'>
+				<span className='text-lg uppercase tracking-wide text-muted-foreground'>
 					{days[0]?.monthName} 2025
 				</span>
 			</div>
@@ -130,11 +134,11 @@ const DayRow: React.FC<DayRowProps> = ({ day }) => {
 		>
 			{/* Левая часть */}
 			<div className='flex flex-col'>
-				<span className='text-sm font-semibold'>
+				<span className='text-lg font-semibold'>
 					{day.dayOfMonth} {day.monthName.slice(0, 3)}
 				</span>
-				<span className='text-xs text-muted-foreground'>
-					{day.weekday} · неделя {day.weekNumber}
+				<span className='text-lg text-muted-foreground'>
+					{day.weekNumber} · {day.weekday}
 				</span>
 			</div>
 
@@ -142,12 +146,12 @@ const DayRow: React.FC<DayRowProps> = ({ day }) => {
 			<div className='flex flex-col items-start'>
 				<Badge
 					variant='outline'
-					className={cn('text-[11px] px-2 py-0.5 border', shiftColor)}
+					className={cn('text-lg px-2 py-0.5 border', shiftColor)}
 				>
 					{day.shiftType === 'none' ? 'Выходной' : day.shiftName}
 				</Badge>
 				{day.timeRange && (
-					<span className='text-xs text-muted-foreground mt-0.5'>
+					<span className='text-lg text-muted-foreground mt-0.5'>
 						{day.timeRange}
 					</span>
 				)}
@@ -156,11 +160,11 @@ const DayRow: React.FC<DayRowProps> = ({ day }) => {
 			{/* Правая часть */}
 			<div className='flex flex-col items-end'>
 				{day.durationHours > 0 ? (
-					<span className='text-sm font-medium'>{day.durationHours} ч</span>
+					<span className='text-lg font-medium'>{day.durationHours} ч</span>
 				) : (
-					<span className='text-xs text-muted-foreground'>0 ч</span>
+					<span className='text-lg text-muted-foreground'>0 ч</span>
 				)}
-				<span className='text-[10px] text-muted-foreground mt-0.5'>
+				<span className='text-lg text-muted-foreground mt-0.5'>
 					{day.shiftType === 'morning'
 						? 'Утро'
 						: day.shiftType === 'evening'
