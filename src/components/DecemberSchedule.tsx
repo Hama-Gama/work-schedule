@@ -53,17 +53,17 @@ export const DecemberSchedule: React.FC = () => {
 			<header className='px-4 pt-4 pb-2 flex items-center justify-between'>
 				<div>
 					{/* ФИО */}
-					<h2 className='text-lg font-semibold'>Аркаев Хамит</h2>
+					<h2 className='text-sm font-semibold'>Аркаев Хамит</h2>
 
 					{/* Должность */}
-					<p className='text-base text-muted-foreground -mt-1'>
+					<p className='text-sm text-muted-foreground -mt-1'>
 						Менеджер по работе с клиентами
 					</p>
 
 					{/* Название графика */}
-					<h1 className='text-base font-semibold mt-2'>График работы</h1>
+					<h1 className='text-sm font-semibold mt-2'>График работы</h1>
 
-					<p className='text-base text-muted-foreground'>
+					<p className='text-sm text-muted-foreground'>
 						{december2025Schedule[0]?.monthName} 2025 &middot; 5 недель
 					</p>
 				</div>
