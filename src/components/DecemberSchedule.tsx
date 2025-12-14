@@ -97,13 +97,13 @@ interface WeekBlockProps {
 const WeekBlock: React.FC<WeekBlockProps> = ({ weekNumber, days }) => {
 	return (
 		<Card className='p-3 border-border/60'>
-			<div className='flex items-center justify-between mb-2'>
-				<span className='text-base font-medium text-muted-foreground'>
+			<div className='flex items-center justify-between mb-0'>
+				<span className='text-sm font-medium text-muted-foreground'>
 					Неделя {weekNumber}
 				</span>
-				<span className='text-base uppercase tracking-wide text-muted-foreground'>
+				{/* <span className='text-base tracking-wide text-muted-foreground'>
 					{days[0]?.monthName} 2025
-				</span>
+				</span> */}
 			</div>
 
 			<div className='grid grid-cols-1 gap-2'>
@@ -133,9 +133,12 @@ const DayRow: React.FC<DayRowProps> = ({ day }) => {
 
 	return (
 		<button
+			// className={cn(
+			// 	'w-full flex items-center justify-between rounded-md border px-3 py-3 text-left transition',
+			// 	'focus:outline-none focus:ring-1 focus:ring-ring',
+
 			className={cn(
-				'w-full flex items-center justify-between rounded-md border px-3 py-2 text-left transition',
-				'focus:outline-none focus:ring-1 focus:ring-ring',
+				'w-full grid grid-cols-[140px_1fr_90px] items-center rounded-md border px-3 py-3 text-left transition',
 
 				// прошлые дни
 				past && 'opacity-40 pointer-events-none',
@@ -162,7 +165,7 @@ const DayRow: React.FC<DayRowProps> = ({ day }) => {
 			</div>
 
 			{/* Центр */}
-			<div className='flex flex-col items-start'>
+			<div className='flex flex-col items-center text-center'>
 				<Badge
 					variant='outline'
 					className={cn('text-base px-2 py-0.5 border', shiftColor)}
