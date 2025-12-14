@@ -133,10 +133,6 @@ const DayRow: React.FC<DayRowProps> = ({ day }) => {
 
 	return (
 		<button
-			// className={cn(
-			// 	'w-full flex items-center justify-between rounded-md border px-3 py-3 text-left transition',
-			// 	'focus:outline-none focus:ring-1 focus:ring-ring',
-
 			className={cn(
 				'w-full grid grid-cols-[140px_1fr_60px] items-center rounded-md border px-3 py-3 text-left transition',
 
@@ -191,7 +187,7 @@ const DayRow: React.FC<DayRowProps> = ({ day }) => {
 						? 'Утро'
 						: day.shiftType === 'evening'
 						? 'Вечер'
-						: 'Нет смены'}
+						: ' '}
 				</span>
 			</div>
 		</button>
