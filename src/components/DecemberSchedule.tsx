@@ -138,7 +138,7 @@ const DayRow: React.FC<DayRowProps> = ({ day }) => {
 			// 	'focus:outline-none focus:ring-1 focus:ring-ring',
 
 			className={cn(
-				'w-full grid grid-cols-[140px_1fr_90px] items-center rounded-md border px-3 py-3 text-left transition',
+				'w-full grid grid-cols-[140px_1fr_60px] items-center rounded-md border px-3 py-3 text-left transition',
 
 				// прошлые дни
 				past && 'opacity-40 pointer-events-none',

@@ -24,7 +24,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-01',
 		dayOfMonth: 1,
-		weekday: 'Понед',
+		weekday: 'Понедельник',
 		weekNumber: 1,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -90,7 +90,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-07',
 		dayOfMonth: 7,
-		weekday: 'Воскр',
+		weekday: 'Воскресенье',
 		weekNumber: 1,
 		monthName: DECEMBER,
 		shiftType: 'evening',
@@ -103,7 +103,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-08',
 		dayOfMonth: 8,
-		weekday: 'Понед',
+		weekday: 'Понедельник',
 		weekNumber: 2,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -169,7 +169,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-14',
 		dayOfMonth: 14,
-		weekday: 'Воскр',
+		weekday: 'Воскресенье',
 		weekNumber: 2,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -182,7 +182,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-15',
 		dayOfMonth: 15,
-		weekday: 'Понед',
+		weekday: 'Понедельник',
 		weekNumber: 3,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -248,7 +248,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-21',
 		dayOfMonth: 21,
-		weekday: 'Воскр',
+		weekday: 'Воскресенье',
 		weekNumber: 3,
 		monthName: DECEMBER,
 		shiftType: 'evening',
@@ -261,7 +261,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-22',
 		dayOfMonth: 22,
-		weekday: 'Понед',
+		weekday: 'Понедельник',
 		weekNumber: 4,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -327,7 +327,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-28',
 		dayOfMonth: 28,
-		weekday: 'Воскр',
+		weekday: 'Воскресенье',
 		weekNumber: 4,
 		monthName: DECEMBER,
 		shiftType: 'morning',
@@ -340,7 +340,7 @@ export const december2025Schedule: DayShift[] = [
 	{
 		date: '2025-12-29',
 		dayOfMonth: 29,
-		weekday: 'Понед',
+		weekday: 'Понедельник',
 		weekNumber: 5,
 		monthName: DECEMBER,
 		shiftType: 'none',
