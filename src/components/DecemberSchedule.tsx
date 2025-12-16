@@ -89,29 +89,31 @@ export const DecemberSchedule: React.FC = () => {
 	)
 }
 
+
 interface WeekBlockProps {
+	weekNumber: number
 	days: DayShift[]
 }
 
-const WeekBlock: React.FC<WeekBlockProps> = ({ days }) => {
+const WeekBlock: React.FC<WeekBlockProps> = ({ weekNumber, days }) => {
 	return (
 		<Card className='p-3 border-border/60'>
-			<h3 className='text-sm font-semibold mb-0'>Неделя {days[0].weekNumber}</h3>
+			<h3 className='text-sm font-semibold mb-0'>Неделя {weekNumber}</h3>
 			<div className='grid grid-cols-1 gap-2'>
 				{days.map(day => (
-					<DayRow key={day.date} day={day}     />
+					<DayRow key={day.date} day={day} />
 				))}
 			</div>
 		</Card>
 	)
 }
 
+
 interface DayRowProps {
-	weekNumber: number
 	day: DayShift
 }
 
-const DayRow: React.FC<DayRowProps> = ({ weekNumber, day }) => {
+const DayRow: React.FC<DayRowProps> = ({ day }) => {
 	const past = isPastDay(day)
 	const todayFlag = isToday(day)
 	const isWeekend = day.weekday === 'Сб' || day.weekday === 'Вс'
