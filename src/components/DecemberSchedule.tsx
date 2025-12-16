@@ -95,13 +95,8 @@ interface WeekBlockProps {
 }
 
 const WeekBlock: React.FC<WeekBlockProps> = ({ weekNumber, days }) => {
-	return 
+	return (
 		<Card className='p-3 border-border/60'>
-			<div className='flex items-center justify-between mb-0'>
-
-	
-			</div>
-
 			<div className='grid grid-cols-1 gap-2'>
 				{days.map(day => (
 					<DayRow key={day.date} day={day}     />
