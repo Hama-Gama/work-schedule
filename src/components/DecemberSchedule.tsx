@@ -64,7 +64,7 @@ export const DecemberSchedule: React.FC = () => {
 					<h1 className='text-sm font-semibold mt-2'>График работы</h1>
 
 					<p className='text-sm text-muted-foreground'>
-						{december2025Schedule[0]?.monthName} 2025 &middot; 5 недель
+						{december2025Schedule[0]?.monthName} 2025 &middot;
 					</p>
 				</div>
 
@@ -98,12 +98,8 @@ const WeekBlock: React.FC<WeekBlockProps> = ({ weekNumber, days }) => {
 	return (
 		<Card className='p-3 border-border/60'>
 			<div className='flex items-center justify-between mb-0'>
-				<span className='text-sm font-medium text-muted-foreground'>
-					Неделя {weekNumber}
-				</span>
-				{/* <span className='text-base tracking-wide text-muted-foreground'>
-					{days[0]?.monthName} 2025
-				</span> */}
+
+	
 			</div>
 
 			<div className='grid grid-cols-1 gap-2'>
