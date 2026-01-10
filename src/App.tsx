@@ -1,9 +1,9 @@
-import { DecemberSchedule } from '@/components/DecemberSchedule'
+import { AnalysisList } from './components/AnalysisList'
 
 function App() {
   return (
     <div className="w-screen h-screen">
-      <DecemberSchedule />
+      <AnalysisList />
     </div>
   )
 }
